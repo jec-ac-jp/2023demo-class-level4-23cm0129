@@ -3,10 +3,12 @@ package com.classroom.assignment.model.request;
 public class Student {
   private String id;
   private String name;
+  private String subject;
 
-  public Student(String id, String name) {
+  public Student(String id, String name, String subject) {
     this.setId(id);
     this.setName(name);
+    this.setSubject(subject);
   }
 
   public String getName() {
@@ -23,6 +25,14 @@ public class Student {
 
   public void setId(String id) {
     this.id = id;
+  }
+
+  public String getSubject() {
+    return subject;
+  }
+
+  public void setSubject(String subject) {
+    this.subject = subject;
   }
 
 
